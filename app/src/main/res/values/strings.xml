@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Music</string>
+
+    <string name="outer_margin">10dp</string>
+
+    <string name="network">Network</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+
+    <string name="chip_1">Workout</string>
+    <string name="chip_2">Focus</string>
+    <string name="chip_3">Relax</string>
+    <string name="chip_4">Commute</string>
+
+    <string name="favorites">Your favorites</string>
+    <string name="fav_1">Chill</string>
+    <string name="fav_1_sub">Playlist • Soyeon Kim •\n116 songs</string>
+    <string name="fav_2">Dancing In The Kitchen</string>
+    <string name="fav_2_sub">LANY</string>
+    <string name="fav_3">What Would You Do</string>
+    <string name="fav_3_sub">Honne</string>
+
+    
+    <string name="nav_menu1">Home</string>
+    <string name="nav_menu2">Explore</string>
+    <string name="nav_menu3">Library</string>
+
+
+    <string name="quick_picks_sub">START RADIO FROM A SONG</string>
+    <string name="quick_picks">Quick picks</string>
+    
+    
+    <string name="pick_1_title">Superhero</string>
+    <string name="pick_1_singer">Lauv</string>
+    <string name="pick_2_title">Moonlight</string>
+    <string name="pick_2_singer">92914</string>
+    <string name="pick_3_title">Off My Face</string>
+    <string name="pick_3_singer">Justin Bieber</string>
+    <string name="pick_4_title">Like That</string>
+    <string name="pick_4_singer">JP Saxe</string>
+    <string name="pick_5_title">Killer Queen</string>
+    <string name="pick_5_singer">5 Seconds Of Summer</string>
+
+</resources>
