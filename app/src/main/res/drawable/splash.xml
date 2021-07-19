@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--background color-->
+    <item android:drawable="@color/black"/>
+    <!--icon.  로고 파일은 xml 이어야함-->
+    <item
+        android:drawable="@drawable/yt_music_logo_splash"
+        android:gravity="center"/>
+</layer-list>

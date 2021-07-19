@@ -8,14 +8,16 @@
         android:label="Youtube Music"
         android:roundIcon="@drawable/yt_music_logo_720"
         android:supportsRtl="true"
-        android:theme="@style/Theme.YoutubeMusic">
-        <activity android:name=".MainActivity">
+        android:theme="@style/SplashTheme">
+        <activity android:name=".MainActivity" android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        //add activity
+        <activity android:name=".PlayMusicActivity"/>
     </application>
 
 </manifest>
