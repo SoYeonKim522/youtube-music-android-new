@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.youtubemusic">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/yt_music_logo"
@@ -9,15 +11,22 @@
         android:roundIcon="@drawable/yt_music_logo_720"
         android:supportsRtl="true"
         android:theme="@style/SplashTheme">
-        <activity android:name=".MainActivity" android:theme="@style/SplashTheme">
+        <service
+            android:name=".PlayMusicService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //add activity
-        <activity android:name=".PlayMusicActivity"/>
+
+        <activity android:name=".PlayMusicActivity" />
     </application>
 
 </manifest>

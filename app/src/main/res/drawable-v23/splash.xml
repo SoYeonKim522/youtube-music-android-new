@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--background color-->
+    <item android:drawable="@color/black"/>
+    <!--icon-->
+    <item
+        android:drawable="@drawable/yt_music_logo_splash"
+        android:gravity="center"/>
+
+</layer-list>
