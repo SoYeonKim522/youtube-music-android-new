@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:drawableStartCompat="@drawable/yt_music_logo"
+        android:drawablePadding="3dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cast_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_cast_connected_24"
+        app:layout_constraintBottom_toBottomOf="@+id/search_icon"
+        app:layout_constraintEnd_toStartOf="@+id/search_icon"
+        app:layout_constraintTop_toTopOf="@+id/search_icon"
+        android:contentDescription="@string/network"/>
+
+    <ImageButton
+        android:id="@+id/search_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_search_24"
+        app:layout_constraintBottom_toBottomOf="@+id/account_icon"
+        app:layout_constraintEnd_toStartOf="@+id/account_icon"
+        app:layout_constraintTop_toTopOf="@+id/account_icon"
+        android:contentDescription="@string/search"/>
+
+    <ImageButton
+        android:id="@+id/account_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/account_icon"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/account"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10533515" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:layout_marginVertical="15dp"
+        app:chipSpacingHorizontal="-2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chip_1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipMinHeight="40dp"
+            app:chipEndPadding="8dp"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@color/chip_stroke"
+            app:chipStrokeWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chip_2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipMinHeight="40dp"
+            app:chipEndPadding="8dp"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@color/chip_stroke"
+            app:chipStrokeWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chip_3"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipMinHeight="40dp"
+            app:chipEndPadding="8dp"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@color/chip_stroke"
+            app:chipStrokeWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chip_4"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipMinHeight="40dp"
+            app:chipEndPadding="8dp"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@color/chip_stroke"
+            app:chipStrokeWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <!--    본 내용-->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--    YOUR FAVORITES-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <!-- YOUR FAVORITES-->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="16dp"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline10">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/fav_1_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/fav_1_main"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/fav_1_img_1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/heather"
+                                app:riv_corner_radius_top_left="8dip" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/ocean_eyes"
+                                app:riv_corner_radius_top_right="8dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/comethru"
+                                app:riv_corner_radius_bottom_left="8dp" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/at_my_worst"
+                                app:riv_corner_radius_bottom_right="8dp" />
+                        </TableRow>
+                    </TableLayout>
+
+
+                    <TextView
+                        android:id="@+id/fav_1_main"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/fav_1"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/fav_1_sub"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_1_table" />
+
+                    <TextView
+                        android:id="@+id/fav_1_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fav_1_sub"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_1_main" />
+
+                    <!--            두번째 fav item-->
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="150dp" />
+
+                    <FrameLayout
+                        android:id="@+id/fav_2_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/fav_2_main"
+                        app:layout_constraintEnd_toStartOf="@id/guideline3"
+                        app:layout_constraintStart_toStartOf="@+id/fav_2_main"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/dancing_in_the_kitchen"
+                            app:riv_corner_radius="8dp" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/fav_2_main"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/fav_2"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/fav_1_main"
+                        app:layout_constraintBottom_toTopOf="@+id/fav_2_sub"
+                        app:layout_constraintStart_toStartOf="@id/guideline2"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_2_img"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/fav_2_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/fav_2_sub"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toStartOf="@id/guideline2"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_2_main" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="316dp" />
+
+                    <FrameLayout
+                        android:id="@+id/fav_3_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/fav_3_main"
+                        app:layout_constraintStart_toStartOf="@id/fav_3_main"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/fav_3_img_itself"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginBottom="52dp"
+                            android:src="@drawable/what_would_you_do"
+                            app:riv_corner_radius="8dp" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/fav_3_main"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/fav_3"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/fav_1_main"
+                        app:layout_constraintBottom_toTopOf="@+id/fav_3_sub"
+                        app:layout_constraintStart_toStartOf="@id/guideline3"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_3_img"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/fav_3_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/fav_3_sub"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/fav_3_main"
+                        app:layout_constraintStart_toStartOf="@id/guideline3"
+                        app:layout_constraintTop_toBottomOf="@+id/fav_3_main" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/quick_picks_sub"
+                android:textColor="@color/small_text_gray"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/quick_picks"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <!--    QUICK PICKS-->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_1_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/superhero"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="4dp"/>
+
+                    <TextView
+                        android:id="@+id/pick_1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:text="@string/pick_1_title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/pick_1_image"
+                        app:layout_constraintTop_toTopOf="@+id/pick_1_image" />
+
+                    <TextView
+                        android:id="@+id/pick_1_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_1_singer"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="@+id/pick_1_title"
+                        app:layout_constraintTop_toBottomOf="@+id/pick_1_title" />
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_baseline_more_vert_24"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="63dp" />
+
+                    <!--            quick pick item 2-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_2_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/moonlight"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline6"
+                        app:riv_corner_radius="4dp"/>
+
+                    <TextView
+                        android:id="@+id/pick_2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/pick_2_title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/pick_2_singer"
+                        app:layout_constraintStart_toEndOf="@+id/pick_2_image"
+                        app:layout_constraintTop_toTopOf="@+id/pick_2_image" />
+
+                    <TextView
+                        android:id="@+id/pick_2_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/pick_2_singer"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pick_2_image"
+                        app:layout_constraintStart_toStartOf="@+id/pick_2_title"
+                        app:layout_constraintTop_toBottomOf="@+id/pick_2_title" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_baseline_more_vert_24"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="@id/guideline6" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="118dp" />
+                    <!--            pick item 3-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_3_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/off_my_face"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline7"
+                        app:riv_corner_radius="4dp"/>
+
+                    <TextView
+                        android:id="@+id/pick_3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/pick_3_title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/pick_3_singer"
+                        app:layout_constraintStart_toEndOf="@+id/pick_3_image"
+                        app:layout_constraintTop_toTopOf="@+id/pick_3_image" />
+
+                    <TextView
+                        android:id="@+id/pick_3_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_3_singer"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pick_3_image"
+                        app:layout_constraintStart_toStartOf="@+id/pick_3_title"
+                        app:layout_constraintTop_toBottomOf="@+id/pick_3_title" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_baseline_more_vert_24"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="@id/guideline7" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="188dp" />
+
+                    <!--            pick item 4-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_4_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/like_that"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline8"
+                        app:riv_corner_radius="4dp"/>
+                    <TextView
+                        android:id="@+id/pick_4_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/pick_4_title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/pick_4_singer"
+                        app:layout_constraintStart_toEndOf="@+id/pick_4_image"
+                        app:layout_constraintTop_toTopOf="@+id/pick_4_image" />
+                    <TextView
+                        android:id="@+id/pick_4_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_4_singer"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pick_4_image"
+                        app:layout_constraintStart_toStartOf="@+id/pick_4_title" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_baseline_more_vert_24"
+                        app:layout_constraintBottom_toBottomOf="@id/guideline9"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="235dp" />
+                    <!--            수직 구분선-->
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="350dp" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_5_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/killer_queen"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                        app:layout_constraintStart_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="4dp"/>
+
+                    <TextView
+                        android:id="@+id/pick_5_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/pick_5_title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/pick_5_singer"
+                        app:layout_constraintStart_toEndOf="@+id/pick_5_image"
+                        app:layout_constraintTop_toTopOf="@+id/pick_5_image" />
+
+                    <TextView
+                        android:id="@+id/pick_5_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_5_singer"
+                        android:textColor="@color/small_text_gray"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pick_5_image"
+                        app:layout_constraintStart_toStartOf="@+id/pick_5_title"
+                        app:layout_constraintTop_toBottomOf="@+id/pick_5_title" />
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_baseline_more_vert_24"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                        app:layout_constraintEnd_toStartOf="@+id/pick_guideline_ver_2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                    pick item 6-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_6_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/what_would_you_do"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                        app:layout_constraintStart_toStartOf="@id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/guideline6"
+                        app:riv_corner_radius="4dp" />
+
+                    <!--                    pick item 7-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_7_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/off_my_face"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="@id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/guideline7"
+                        app:riv_corner_radius="4dp" />
+
+                    <!--                    pick item 8-->
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/pick_8_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/dancing_in_the_kitchen"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                        app:layout_constraintStart_toStartOf="@id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/guideline8"
+                        app:riv_corner_radius="4dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/pick_guideline_ver_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="716dp"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/yourFav"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/favorites"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
